@@ -26,6 +26,7 @@ changeTimeSubmit.addEventListener("click", (e) => {
 	const body = Object.assign({auth: auth}, times)
 	postData(url+"time", body).then(data => {
 		if(data.success) {
+			console.log(data)
 			message("O`zgartirildi", true)
 		} else {
 			message("Xatolik: " + data.err, false)
