@@ -7,7 +7,7 @@ const changeTimeForm = document.getElementById("changeTime")
 const changeTimeSubmit = document.getElementById("changeTimeSubmit")
 const timeData = document.getElementById("timeData")
 
-const url = "http://localhost:5000/api/"
+const url = "https://namoz-vaqtlari-v1.herokuapp.com/api/"
 
 let user;
 
