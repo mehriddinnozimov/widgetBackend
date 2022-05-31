@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Namoz vaqtlari</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+    </head>
+    <body>
+        <div class="container" id="container">
+            <div id="message"></div>
+            <form id="form">
+                <h2 style="text-align:center;font-size: 38px;">Log In</h2>
+                <p style="text-align:center;font-size: 30px;">Kirish uchun username va password ni kiriting</p>
+                <input type="text" name="username" placeholder="Username" required id="username">
+                <input type="password" name="password" placeholder="Password" required id="password">
+                <input type="submit" value="Login" id="submit">
+
+            </form>
+            <form id="changeTime" style="display: none;">
+                <p style="text-align:center;font-size: 30px;">Namoz vaqtlarini o`zgartirish</p>
+                <div id="timeData"></div>
+                <input type="submit" value="Ok" id="changeTimeSubmit" style="display: none;">
+            </form>
+        </div>
+        <script type="text/javascript" src="/index.js"></script>
+    </body>
+</html>
