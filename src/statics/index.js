@@ -67,10 +67,10 @@ function startTimeChange(){
 
 			timesArray.forEach(time => {
 				let [ h, m ] = times[time].split(":")
-				if(h > 24) h = 24
-				if(h < 0) h = 0
-				if(m > 59) m = 59
-				if(m < 0) m = 0
+				if(Number(h) > 24) h = 24
+				if(Number(h) < 0) h = 0
+				if(Number(m) > 59) m = 59
+				if(Number(m) < 0) m = 0
 				const el = document.createElement("div")
 				el.innerHTML = `<label>${capitalizeFirstLetter(time)}</label><input type="number" name="${time}" required id="${time}Hour" placeholder="soat" max="24" min="0" value="${h}"><input type="number" name="${time}" required id="${time}Minute" placeholder="daqiqa" max="59" min="0" value="${m}">`
 				timeData.appendChild(el)
@@ -99,9 +99,13 @@ const getData = async (uri) => {
 }
 
 function message(value, success) {
+	m.style.display = "block"
 	const m = document.getElementById("message")
 	m.style.backgroundColor = success ? "#04AA6D" : "red"
 	m.innerHTML = value
+	setTimeout(() => {
+		m.style.display = "none"
+	}, 3000)
 }
 
 function capitalizeFirstLetter(string) {
