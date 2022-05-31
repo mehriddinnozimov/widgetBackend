@@ -99,8 +99,8 @@ const getData = async (uri) => {
 }
 
 function message(value, success) {
-	m.style.display = "block"
 	const m = document.getElementById("message")
+	m.style.display = "block"
 	m.style.backgroundColor = success ? "#04AA6D" : "red"
 	m.innerHTML = value
 	setTimeout(() => {
