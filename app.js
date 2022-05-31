@@ -41,6 +41,7 @@ app.post("/api/profile/password", auth, async (req, res) => {
     	await user.save()
         return res.json({ success:true, user })
     } catch (err) {
+        console.log(err)
         return res.json({ success:false, err })
     }
 })
@@ -49,6 +50,7 @@ app.post("/api/profile", auth, async (req, res) => {
 	try {
         return res.json({ success:true, user: req.user })
     } catch (err) {
+        console.log(err)
         return res.json({ success:false, err })
     }
 })
@@ -58,6 +60,7 @@ app.post("/api/profile/logout", auth, async (req, res) => {
         await req.logout()
         return res.json({ success: true })
     } catch (err) {
+        console.log(err)
         return res.json({ success: false, err })
     }
 })

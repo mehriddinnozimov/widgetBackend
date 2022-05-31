@@ -45,6 +45,7 @@ loginFormSubmit.addEventListener("click", (e) => {
 			loginForm.style.display = "none"
 			startTimeChange()
 		} else {
+			if(typeof data.err == "object") data.err = "Aniqlanmagan xatolik"
 			message("Xatolik: " + data.err, false)
 		}
 
