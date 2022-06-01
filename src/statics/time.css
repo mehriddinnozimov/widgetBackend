@@ -1,0 +1,47 @@
+body {
+  background-color: #ffffff;
+  color: #199949;
+}
+
+.container {
+  position: relative;
+  margin: 0 10px;
+  padding: 30px 40px 30px 40px;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 38px;
+  text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h4 {
+  font-size: 30px;
+  position: relative;
+}
+
+hr {
+  width: 70%;
+  text-align: center;
+}
+.wrap_time {
+  margin: 0 25%;
+}
+.time {
+  width: 25%;
+  display: inline-block;
+}
+
+.text {
+  width: 25%;
+  display: inline-block;
+}
+
+.mid {
+  width: 50%;
+  display: inline-block;
+}
