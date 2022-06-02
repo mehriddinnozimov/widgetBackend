@@ -74,6 +74,7 @@ app.get("/api/time", async (req, res) => {
         await time.save()
         return res.json({ success: true, times: times[0] })
     } catch (err) {
+        console.log(err)
         return res.json({ success: false, err })
     }
 
