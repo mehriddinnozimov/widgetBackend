@@ -8,8 +8,8 @@ const shom = document.getElementById("shom")
 const xufton = document.getElementById("xufton")
 
 // const url = "https://namoz-vaqtlari-v1.herokuapp.com/api/"
-const url = "http://localhost:5000/api/"
-const timesArrayKrill = ["Бомдод", "Пешин", "Aср", "Шом", "Хуфтон"]
+const url = "https://namoz-vaqtlari-v1.herokuapp.com/api/"
+// const timesArrayKrill = ["Бомдод", "Пешин", "Aср", "Шом", "Хуфтон"]
 const timesArray = ["bomdod", "peshin", "asr", "shom", "xufton"]
 
 const getData = async (uri) => {
