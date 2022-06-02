@@ -67,8 +67,16 @@ app.post("/api/profile/logout", auth, async (req, res) => {
 
 
 app.get("/api/time", async (req, res) => {
-    const times = await Time.find()
-    return res.json({ success: true, times: times[0] })
+    try {
+        const times = await Time.find()
+        const time = await Time.findOne(times[0]._id)
+        time.countViewer = time.countViewer + 1;
+        await time.save()
+        return res.json({ success: true, times: times[0] })
+    } catch (err) {
+        return res.json({ success: false, err })
+    }
+
 })
 
 app.post("/api/time", auth, async (req, res) => {

@@ -1,5 +1,5 @@
 body {
-  background-color: #ffffff;
+  background-color: #1F2421;
   color: #29BF12;
   font-size: 32px;
 }
@@ -10,4 +10,8 @@ h1 {
 
 .text {
   color: #ABFF4F;
+}
+
+#timeValue {
+  color: #16DB65;
 }
