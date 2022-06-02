@@ -25,7 +25,8 @@ module.exports = async () => {
 			asr: "16:55",
 			shom: "18:45",
 			xufton: "20:15",
-			owner: admin._id
+			owner: admin._id,
+			countViewer: 0
 		})
 
 		await time.save()

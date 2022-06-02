@@ -7,10 +7,8 @@ const asr = document.getElementById("asr")
 const shom = document.getElementById("shom")
 const xufton = document.getElementById("xufton")
 
-// const url = "https://namoz-vaqtlari-v1.herokuapp.com/api/"
+
 const url = "https://namoz-vaqtlari-v1.herokuapp.com/api/"
-// const timesArrayKrill = ["Бомдод", "Пешин", "Aср", "Шом", "Хуфтон"]
-const timesArray = ["bomdod", "peshin", "asr", "shom", "xufton"]
 
 const getData = async (uri) => {
 	const response = await fetch(uri, {
